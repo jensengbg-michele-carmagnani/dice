@@ -1,0 +1,162 @@
+body {
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.dice {
+  width: 4rem;
+  height: 4rem;
+  background: #eee;
+  border: 2px solid #222;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.dice aside {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #222;
+  border-radius: 99rem;
+  display: none;
+}
+.dice.faded {
+  opacity: 0.2;
+}
+
+.dice.dice-1 aside:nth-child(1) {
+  display: block;
+  margin: auto;
+}
+.dice.dice-2 aside:nth-child(1) {
+  display: block;
+  align-self: flex-start;
+}
+.dice.dice-2 aside:nth-child(2) {
+  display: block;
+  align-self: flex-end;
+}
+.dice.dice-3 aside:nth-child(1) {
+  display: block;
+  align-self: flex-start;
+}
+.dice.dice-3 aside:nth-child(2) {
+  display: block;
+  align-self: center;
+}
+.dice.dice-3 aside:nth-child(3) {
+  display: block;
+  align-self: flex-end;
+}
+
+.dice.dice-4 aside:nth-child(1) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+}
+.dice.dice-4 aside:nth-child(2) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+}
+.dice.dice-4 aside:nth-child(3) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+}
+.dice.dice-4 aside:nth-child(4) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.dice.dice-5 aside:nth-child(1) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+}
+.dice.dice-5 aside:nth-child(2) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+}
+.dice.dice-5 aside:nth-child(3) {
+  display: block;
+  position: absolute;
+  margin: auto;
+  bottom: 2rem;
+}
+.dice.dice-5 aside:nth-child(4) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+}
+.dice.dice-5 aside:nth-child(5) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+
+.dice.dice-6 aside:nth-child(1) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  top: 2rem;
+}
+.dice.dice-6 aside:nth-child(2) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+  top: 2rem;
+}
+.dice.dice-6 aside:nth-child(3) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+}
+.dice.dice-6 aside:nth-child(4) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.dice.dice-6 aside:nth-child(5) {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+.dice.dice-6 aside:nth-child(6) {
+  display: block;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
