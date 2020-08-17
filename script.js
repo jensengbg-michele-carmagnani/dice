@@ -13,6 +13,8 @@ let play = document.getElementById("play");
 play.addEventListener("click", () => {
   // call function throwDice() and  save dice results
   console.log("Your corrent goal to achieve is--> " + correntGoal);
+  // clean the h2
+  message.innerHTML = "Corrent goal to achieve";
 
   // set the corrent goal to achieve
   document.querySelector("#goal").classList.add("dice", `dice-${correntGoal}`);
@@ -49,15 +51,13 @@ play.addEventListener("click", () => {
     // Message to the winner
     message.innerHTML = `You win in n ${throws} throws!`;
 
-    //remove corrent goal 
+    //remove corrent goal
     document
-    .querySelector("#goal")
-    .classList.remove("dice", `dice-${correntGoal}`);
+      .querySelector("#goal")
+      .classList.remove("dice", `dice-${correntGoal}`);
 
-    // reset counter 
+    // reset counter
     correntGoal = 1;
     throws = 0;
-
-
   }
 });
